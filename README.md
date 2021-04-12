@@ -1,0 +1,2 @@
+# chineseocrlite-aardio
+chineseocrlite的aardio支持库

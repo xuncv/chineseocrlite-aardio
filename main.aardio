@@ -1,0 +1,17 @@
+import console
+import ocrLite;
+
+var ocr = ocrLite(enableLogger=false)
+var str = string.load( "./santi.png")
+var ret = ocr.getResult(str)
+
+var textBlocks = ret.textBlocks
+for(i=1;#textBlocks;1){
+	console.log( textBlocks[i].text )
+	for(j=1;#textBlocks[i].point;1){
+		//文本框四角坐标
+		//console.log(textBlocks[i].point[j].x,textBlocks[i].point[j].y)
+	}
+}
+
+console.pause(true);

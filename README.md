@@ -11,9 +11,22 @@
 
 ##### 用法：
 
-下载[ocrLite库](https://github.com/xuncv/chineseocrlite-aardio/releases/download/0.0.1/ocrLite.zip)，放到aardio开发环境的lib目录下。
+第一种：下载[ocrLite库](https://github.com/xuncv/chineseocrlite-aardio/releases/download/0.0.1/ocrLite.zip)，放到aardio开发环境的lib目录下。
 
+第二种：自动安装
 
+```
+允许使用 _IMPORTURL 注册远程扩展库网址，例如：
+
+_IMPORTURL.ocrLite = "https://github.com/xuncv/chineseocrlite-aardio/releases/download/0.0.1/ocrLite.tar.lzma"
+import ocrLite;
+
+也可以在aardio中单独运行下面的代码安装远程扩展库：
+
+import ide;
+ide.installLib("ocrLite","https://github.com/xuncv/chineseocrlite-aardio/releases/download/0.0.1/ocrLite.tar.lzma")
+
+```
 
 ![santi](./santi.png)
 
